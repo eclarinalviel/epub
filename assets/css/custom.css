@@ -1,0 +1,366 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2016, 9:20:36 AM
+    Author     : Web-Developer
+*/
+
+/*GUEST CSS*/
+
+
+
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* padded section */
+.pad-section {
+  padding: 30px 0;
+  height: 100%;
+}
+.pad-section img {
+  width: 100%;
+}
+
+.img-responsive {
+    height: 50px;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: 800px;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 2px #fff;
+  text-transform: uppercase;
+}
+
+.text-center2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* additional sections */
+#home {
+  background: url(../images/img/BG.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.transpa-box {
+  width:100%;
+  height:300px;
+  background-color: rgba( 255, 255, 255, 0.7 );
+  border: 1px solid none;
+  padding: 50px;
+}
+
+/*.transpa-box a {
+    border: 2px solid #FF414D;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0.1);
+    color: #FF414D;
+    font-weight: bold;
+}
+*/
+.btn-trans {
+  border: 2px solid #002D40 !important;
+  border-radius: 2px !important;
+  background-color: rgba(217, 236, 242,0.1) !important;
+  color: #002D40 !important;
+  font-weight: bold !important;
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+
+.btn-trans-red {
+    color: #FF414D;
+    background: transparent;
+    padding: 5px 8px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #FF414D;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FF414D;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    width: 150px !important;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.btn-trans-red:hover {
+    box-shadow: inset 0 100px 0 0 #FF414D;
+    color: #FFF;
+    border: 3px solid #FF414D;
+    text-decoration: none;
+}
+
+
+.transpa-box a {
+    color: #FF414D;
+    background: rgba(0,0,0,0.1);
+    padding: 10px;
+    margin: 25px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #FF414D;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FF414D;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    width: 150px !important;
+}
+
+.transpa-box a:hover {
+    box-shadow: inset 0 100px 0 0 #FF414D;
+    color: #FFF;
+    border: 3px solid #FF414D;
+}
+
+#about {
+}
+
+#books {
+  background-color: rgba( 217, 236, 242, 0.2 );
+  color: #002D40;
+}
+/*#books .glyphicon {
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}*/
+
+#statistics {
+  background: url(../images/img/BG2.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#statistics .panel {
+  opacity: 0.85;
+}
+
+.no-border-radius {
+  border-radius: 1px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+  box-shadow: 5px 0px 5px 1px rgba(90, 90, 90, 0.7);
+}
+.portfolio-box .portfolio-box-caption {
+  color: white;
+  opacity: 0;
+  display: block;
+  background: rgba(24,164,181, 0.8);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0 15px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+.portfolio-box:focus {
+  outline: none;
+}
+
+.line {
+  width: 100%; 
+  background-color: #555; 
+  height: 12px; 
+  float: left; 
+  margin-top: 3px;
+  margin-bottom: 20px;
+  border: 1px inset;
+}
+
+/* END OF GUEST CSS */
+
+
+.white{
+    color: white;
+}
+
+.log_butt {
+    color: #FF414D;
+    background: #002D45;
+    padding: 12px 17px;
+    margin: 25px;
+    font-family: 'OpenSansBold', sans-serif;
+    border: 3px solid #FF414D;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #FF414D;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+    width: 90% !important;
+    }
+.log_butt:hover {
+    box-shadow: inset 0 100px 0 0 #FF414D;
+    color: #FFF;
+}
+
+.pad-right50{
+    padding-right: 40px;
+}
+
+.right-nav{
+    padding: 20px;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red > a {
+    color: #d9534f;
+}
+
+.panel-red > a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+
+.no-border{ 
+    border-color: #fff !important;
+}
+
