@@ -20,8 +20,8 @@
 				        <?php $count = 0;  ?>
 				        <?php foreach( $books as $book ): ?>
 
-				            <div class="col-lg-2 col-sm-4" style="padding:20px 30px 0px 30px">
-				                <a role="button" data-toggle="modal" href="#ebook_download<?= $book->id; ?>" class="portfolio-box">
+				            <div class="col-lg-3 col-sm-4" style="padding:20px 30px 0px 30px">
+				                <a class="portfolio-box">
 				                    <img src="<?= base_url('assets/images/thumbnails/'.$book->thumbnail) ?>" class="img-responsive" alt="">
 				                    <div class="portfolio-box-caption">
 				                        <div class="portfolio-box-caption-content">
@@ -31,7 +31,7 @@
 				                            <div class="project-name">
 				                                <?= $book->description ?>
 				                            </div>
-				                            <button data-toggle="modal" data-target="#ebook_download<?= $book->id; ?>" class="btn btn-danger btn-trans" style="margin-top: 20px;"><span class="glyphicon glyphicon-save"></span> Download</button>
+				                            <button type="button" data-toggle="modal" data-target="#ebook_download<?= $book->id; ?>" class="btn btn-danger btn-trans" style="margin-top: 20px;"><span class="glyphicon glyphicon-save"></span> Download</button>
 				                        </div>
 				                    </div>
 				                </a>

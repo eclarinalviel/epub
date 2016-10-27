@@ -65,7 +65,7 @@ class Dashboard extends CI_Controller
         // var_dump($this->Ebook_model->_get_all_books_per_level(user('grade_level'))); exit;
         $obj = array(
             'page_title' => 'Guest',
-            'books' => $this->Ebook_model->_get_all_books_per_level(user('grade_level'))
+            'books' => $this->Ebook_model->_get_all_books_per_level(user('grade_level'), user('sc_id'))
         );
 
         $this->load->view('header', $obj);

@@ -23,9 +23,9 @@ class Ebook extends CI_Controller {
     public function download(){
         $password = md5($this->input->post('password'));
         $book_id = $this->input->post('book_id');
-
         // validate password base on book_id
         $ebook = $this->Ebook_model->_get_ebook_by_id( $book_id );
+       
         if ( $password == $ebook->password ) {
             $file = file_get_contents(base_url('assets/documents/'.$ebook->file_path)); // Read the file's contents
             force_download($ebook->file_path, $file);

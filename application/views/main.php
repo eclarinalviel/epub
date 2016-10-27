@@ -26,7 +26,7 @@
         <?php foreach( $books as $book ): ?>
 
             <div class="col-lg-3 col-sm-4" style="padding:20px 30px 0px 30px">
-                <a role="button" data-toggle="modal" href="#ebook_download<?= $book->id; ?>" class="portfolio-box">
+                <a class="portfolio-box">
                     <img src="<?= base_url('assets/images/thumbnails/'.$book->thumbnail) ?>" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -36,7 +36,7 @@
                             <div class="project-category text-faded" style="text-transform: none;">
                                 <?= $book->description ?>
                             </div>
-                            <button data-toggle="modal" data-target="#ebook_download<?= $book->id; ?>" class="btn btn-danger btn-trans" style="margin-top: 20px;"><span class="glyphicon glyphicon-save"></span> Download</button>
+                            <button type="button" data-toggle="modal" data-target="#ebook_download<?= $book->id; ?>" class="btn btn-danger btn-trans" style="margin-top: 20px;"><span class="glyphicon glyphicon-save"></span> Download</button>
                         </div>
                     </div>
                 </a>
@@ -83,7 +83,7 @@
                     <div class="modal-body">
                        <form action="<?=base_url('ebook/download')?>" method="post" role="form">
                             <div class="form-group">
-                                <input type="hidden" class="form-control" id="book_id" name="book_id" value="<?= $book->id ?>">
+                                <input type="hidden" class="form-control" id="book_id" name="book_id" value="<?= $book->book_id ?>">
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" required>
                             </div>
